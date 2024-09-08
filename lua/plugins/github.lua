@@ -6,11 +6,17 @@ return {
   config = function()
     require("github-theme").setup({
       -- ...
+      groups = {
+        all = {
+          Normal = { bg = "#0d1117" },
+          NormalNC = { bg = "#0d1117" },
+        },
+      },
     })
 
     vim.cmd("colorscheme github_dark")
   end,
-  on_highlights = function(highlights, colors)
-    highlights.DiagnosticUnderlineWarn = { underline = false, undercurl = nil }
-  end,
+  -- on_highlights = function(highlights, colors)
+  --   highlights.DiagnosticUnderlineWarn = { underline = false, undercurl = nil }
+  -- end,
 }
