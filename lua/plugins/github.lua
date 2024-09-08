@@ -16,7 +16,7 @@ return {
 
     vim.cmd("colorscheme github_dark")
   end,
-  on_highlights = function(highlights, colors)
-    highlights.DiagnosticUnderlineWarn = { underline = false, undercurl = nil }
-  end,
+  -- on_highlights = function(highlights, colors)
+  --   highlights.DiagnosticUnderlineWarn = { underline = false, undercurl = nil }
+  -- end,
 }
